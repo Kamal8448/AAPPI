@@ -108,6 +108,7 @@ public class Xpath {
     }
     @Test
     void validate(){
+        System.out.println("doing validation");
         WebDriver driver = new ChromeDriver();
         driver.get("https://fb.com/");
         Collection<WebElement> link = driver.findElements(By.xpath("//div[@id='pageFooter']/ul/li"));
