@@ -1,0 +1,399 @@
+qa.kamaljit.kaur@gmail.com 
+kamaljitkkaurgrewal@gmail.com
+kaurkkamaljitgrewal@gmail.com
+grewalkamaljitkkaur@gmail.com
+grewalkaurkkamaljit@gmail.com
+-------------------------------------------
+
+2. no digits or no special characters except _ and $
+where do we use $ keyword?
+
+there is no concept called non- static variable in interface ?
+==========================================================================
+1. create new folder in java project when creating it
+
+create simple project without internet let see if error comes as we have dependices 
+installed in previous project?
+
+try to use private variable in interface.
+
+can we write method in interface in this way:
+default void n(){		//public default void n(){
+				//return ;
+	}        
+------------------------------------------
+line no 239:  	byte b = ((Integer)i).byteValue();  44
+w3 schoold says Iteratpr in util, but jdk ssays: lang
+        public final class java.lang.StringBuilder extends java.lang.AbstractStringBuilder implements java.io.Serializable,java.lang.CharSequence {
+	public final class java.lang.StringBuffer extends java.lang.AbstractStringBuilder implements java.io.Serializable,java.lang.CharSequence {
+
+---------------------------------
+class UpcastDowncast_Pro1{
+		CharSequence cs = "Hello";
+		static CharSequence cs2 = new StringBuffer("Java");
+	}
+	
+	class UpcastDowncast_Pro1_Test{
+		public static void main(String...abc){
+			
+		}
+	}
+	
+	StringBuffer sb = new StringBuffer("Hello");
+Object sb2 = new StringBuffer("Hello");  //upcasting
+StringBuffer sb3 = (StringBuffer)sb2;  //downcasting
+-------------------------------------------------------
+left side of Constructor
+return type: no
+ Type Parameter: <T> (Optional)-------------------------------------------????
+access modifier: public, private, protected or no parameter
+if class does not have any class modifer then it it just blank or could be default ?------------????????
+
+
+----------------------------------------------------------------
+if I am not using super,and creating parameterized constructor in child and parent class, it gives an error: ---------------??????????
+" There is no default constructor available " so it means either it has to be default constructor ccreated my developer or
+super( should use to invoke parent class constructor)
+----------------------------------------------
+use of autoboxing: this coveriting primitive as object, so that we can access nonstatic members of that class).--------???????????
+methods can be non static in inyterface but variable shas to be public static final
+----------------------------------------------------------------------------------------------------------------------------------------9th September:
+calling method with upcasting: run time polymorphism and calling without upcasting, called complie time polymorphism. 
+accessmodifier abstract returntype metodname(parameters);		
+		Note:- if a class has any abstract method, then the class must be marked as abstract.--done	
+		Note:- we can't declar static methods. 
+
+In second note: does it means that we cannot use static when declaring method as abstract ?
+-----------------------------------------------------------------------------------------
+private/	/protected/public
+		final/abstract             
+		static/abstarct		
+		synchronized
+		strictfp  
+
+as you mentioned modifiers: does it mean, we can just one modifier while declaring a method as abstract ?
+so when declaring method as abstract, when can use one access modifierat one time ...................................????????????
+----------------------------------------------------
+how does radix calculate ?
+
+static method can be overidden and overloaded.
+so we child class extend a parent class with static method, can child class access the static method or it has to be accessed by their respective class ?
+
+
+find the average no in array ?
+assignment operator: +=, /= etc
+find max value in an aray
+
+
+public/private/protected/default
+multi dimisional array????????????????????????????
+arraylist functions'
+iterator'
+synchronized, mutable
+
+how does Hashset stores value, when we print values, it does not in serial order..
+
+
+
+import java.util.*;  
+class HashSet1{  
+ public static void main(String args[]){  
+  //Creating HashSet and adding elements  
+    HashSet<String> set=new HashSet();  
+           set.add("One");    
+           set.add("Two");    
+           set.add("Three");   
+           set.add("Four");  
+           set.add("Five");  
+           Iterator<String> i=set.iterator();  
+           while(i.hasNext())  
+           {  
+           System.out.println(i.next());  
+           }  
+ }  
+}  
+
+--------------------------------------------------------
+age
+Vehicle year
+Vehicle make
+Vehivle model
+--------------------------------------
+type: new or used
+owned or leased: 
+date of purchase:year and month
+how much will drive: 10,000
+use your license: 
+-----------------------------------------------------------
+public double calculateTotal() {
+		MPV mpv = new MPV();
+		double temp = (mpv.getMarketPrice()*INITPERCENT)+mpv.engine+mpv.getLocation()+mpv.getCoverage();
+		mpv.total = temp - (mpv.getDiscount()/100)*temp;
+		return mpv.total;
+
+
+private static String name = " ";
+	private static String brand = " ";
+	private static double coverage = 0.0;
+	private static double marketPrice = 0.0;
+	private static double location = 0.0;
+	private static double discount = 0.0;
+	private java.util.Date dateCreated;
+	
+	protected Car() {
+		this(name,brand);
+		dateCreated = new java.util.Date();
+	}
+	
+	protected Car(String name,String brand) {
+		Car.name = name;
+		Car.brand = brand;
+		dateCreated = new java.util.Date();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		Car.name = name;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		Car.brand = brand;
+	}
+	
+	public static void setMarketPrice(double m) {
+		Car.marketPrice = m;
+	}
+
+	public static void setDiscount(double d) {
+		Car.discount = d;
+	}
+
+	public static void setAll(double c, double l) {
+		Car.coverage = c;
+		Car.location = l;
+	}
+
+	public static double getMarketPrice() {
+		return marketPrice;
+	}
+
+	public static double getLocation() {
+		return location;
+	}
+
+	public static double getDiscount() {
+		return discount;
+	}
+	
+	public static double getCoverage() {
+		return coverage;
+
+
+
+difference between if we print values normally or using entry set, it shows the same result. (Hashmap)
+spliterator() - in HashSet
+can we have multiple mthods in try statrement.
+one method can contain one try catch but multiple methods may have there own try catch.
+Write a Java program to create a method that reads a file and throws an exception if the file is not found.
+
+
+
+
+
+
+
+
+
+
+
+if (EnterDetails.licenseold <= 2) { // if cx has 2 or more year old license, then 5% discount will apply
+                CalculatePremium.temp = (EnterDetails.marketprice * 5) / 100;
+                System.out.println("license 1st  block");
+                CalculatePremium.total = EnterDetails.marketprice-temp;
+            } else  { // if cx has  more then 2 year old license, then 10% discount will apply
+                CalculatePremium.temp = (EnterDetails.marketprice * 10) / 100;
+                System.out.println("license 2nd  block");
+                CalculatePremium.total = EnterDetails.marketprice-temp;
+            }
+sortedset	
+diff srrting /string buffer
+
+----------------
+do we need to learn all methods of Runtime class. getruntime() .exec()
+Syntax_7 - using the parent
+			----------------------------
+				xpath:
+				
+					//fatherElement_using_any_of_above_6_syntaxes/child_element_using_any_of_above_6_syntaxe
+					
+					//div[@class='_6ltg']/a
+
+
+
+<a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="#" ajaxify="/reg/spotlight/" id="u_0_0_EQ"
+ data-testid="open-registration-form-button" rel="async">Create new account</a>
+------------------------------------------------------------------------------------------------------------------------------------------
+Syntax_4 - using the starts-with()
+			
+				xpath:
+					//tagname[starts-with(@attributename, 'value')]
+					//tagname[starts-with(text(), 'value')]
+					
+					//a[1][starts-with(text(),'Create n')] -----------------------why do we need to ass 1 with a
+
+--------------------------------------------------------------------------
+
+
+//div[@class='_6ltg']/following-sibling::div[@class='_6ltj']/a
+
+//div[@class='_8icz']/following-sibling::div[@class='_6ltg']/a
+
+
+Robot
+
+
+
+Mobile number or email
+
+//select[@id='day']/option
+        select_year.selectByIndex(2); // picking 2021 year
+
+--------------------------------------------------------------------
+Please do write a script for a below testcase:
+ 
+ 1)    Open Chrome Browser.
+ 2)    Open fb.com url
+ 3)    Check the language links - where "हिन्दी" is a link and get the position of the link.
+ 4)    click on "हिन्दी" languages.
+ 5)    Validate that "हिन्दी" is not a link and it comes in first position.
+
+
+check box click
+button click - do practice for it
+
+diff b/w replace/ replaceall
+does intern() allocate memory in string constant pool ? or get the value from pool.
+intern() - used to fecth data from string pool
+
+Hello
+01234
+HJava
+
+
+Action intterface just has a build() method ?
+
+default wait time for selenium for explicit wait is 500 milisseconds that is half second.
+RAM
+
+https://demoqa.com/droppable/
+===================================================================================================
+Class FluentWait extends Object implements Wait
+Class WebWait extends FluentWait
+
+
+
+in implicit wait: if element location does not find with in certain time period, then it will throw an No Such Element Exception.
+
+in explicit wait, is used to tell the Web Driver to wait for certain conditions (Expected Conditions) or maximum time exceeded before throwing 
+“ElementNotVisibleException” 
+
+====================================================
+//span[normalize-space()='Admin']
+
+//input[@class='oxd-input oxd-input--active']  ==> these are two : one for search and another for username
+
+//div[@tabindex=0] = for select menu  //div[@tabindex=0] for both User role and status
+
+
+
+
+//div[@class='oxd-form-row']/div[@class='oxd-grid-2 orangehrm-full-width-grid']/div[3]//div[@class='oxd-select-text-input'][text()='-- Select --']
+
+
+
+
+
+
+
+
+					//a[normalize-space(@class)='userProfileLink username ']
+     @FindBy(how = How.XPATH, using = "//a[normalize-space(@class)='userProfileLink username']")
+
+
+
+
+full screenshort pending
+
+    public static WebElement getElementByTime(WebDriver driver, String locatorType, String locatorValue) {
+        WebElement element = null;
+        FluentWait<WebDriver> fw= new  WebDriverWait(driver, Duration.ofSeconds(FwConstants.Element_Wait_Time));
+        fw.pollingEvery(Duration.ofSeconds(5));
+        fw.ignoring(StaleElementReferenceException.class);
+
+
+is dependency and plugins are linked with each other?
+maven-surefire-plugin
+
+
+======================================================================================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- @BeforeSuite -->
+<suite name="actitime test Suite" guice-stage="DEVELOPMENT">
+    <!-- @BeforeTest -->
+    <test thread-count="5" name="actitime_testng_fw">
+        <parameter name="bn" value="chrome"></parameter>
+        <parameter name="author" value="Kamal"></parameter>
+        <classes>
+            <!-- @BeforeClass -->
+            <class name="testscript_runner.TestClassAfterMethod">
+                <methods>
+                    <!-- @BeforeMethod -->
+                    <include name="loggingIn"/>
+                    <!-- @AfterMethod -->
+                    <!-- @BeforeMethod -->
+
+                    <!-- @AfterMethod -->
+                </methods>
+            </class> <!-- testscript_runner.actiTimeTestRunner -->
+            <!-- @AfterClass -->
+        </classes>
+    </test> <!-- actitime_testng_fw -->
+
+    <test thread-count="5" name="actitime_testng_fw_edge">
+        <parameter name="bn" value="edge"></parameter>
+        <parameter name="author" value="abc"></parameter>
+        <classes>
+            <!-- @BeforeClass -->
+            <class name="testscript_runner.TestClassAfterMethod">
+                <methods>
+                    <!-- @BeforeMethod -->
+
+                    <!-- @AfterMethod -->
+                    <!-- @BeforeMethod -->
+                    <include name="secondway_loggingIn"/>
+                    <!-- @AfterMethod -->
+                </methods>
+            </class> <!-- testscript_runner.actiTimeTestRunner -->
+            <!-- @AfterClass -->
+        </classes>
+    </test> <!-- actitime_testng_fw -->
+</suite> <!-- Default Suite -->
+        <!-- @AfterSuite -->
+
+
+
+
+
+
+
+
+https://demo.actitime.com/user/submit_tt.dohttps://demo.actitime.com/user/submit_tt.do
